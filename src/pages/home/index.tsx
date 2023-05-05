@@ -1,33 +1,33 @@
-// // Styles
-// import { Container } from "@/styles/Global";
-// import { Text } from "@/styles/Text";
-// import { Button } from "@/styles/Buttons";
+// Styles
+import { Container } from "@/styles/Global";
+import { Text } from "@/styles/Text";
+import { Button } from "@/styles/Buttons";
 
-// // Components
-// import { Stack } from "@/components/Stack";
-// import { Project } from "@/components/Project";
+// Components
+import { Stack } from "@/components/Stack";
+import { Project } from "@/components/Project";
 
-// // Data
-// // import { stackData } from "@/utils/stackData";
-// // import { userData } from "@/utils/userData";
+// Data
+import { stackData } from "@/utils/stackData";
+import { userData } from "@/utils/userData";
 
-// // Page Style
-// import {
-//   Header,
-//   HeaderContent,
-//   HeaderButtonsArea,
-//   StackSection,
-//   StackCards,
-//   ProjectsArea,
-//   ProjectsAreaSocialMediaMessage,
-//   ProjectsAreaContent,
-//   ProjectAreaWrapperColumns,
-// } from "./style";
+// Page Style
+import {
+  Header,
+  HeaderContent,
+  HeaderButtonsArea,
+  StackSection,
+  StackCards,
+  ProjectsArea,
+  ProjectsAreaSocialMediaMessage,
+  ProjectsAreaContent,
+  ProjectAreaWrapperColumns,
+} from "./style";
 
 export const Home = (): JSX.Element => {
   return (
     <main>
-      {/* <Header>
+      <Header>
         <Container>
           <HeaderContent>
             <Text as="h1" type="heading1" color="grey5">
@@ -54,12 +54,12 @@ export const Home = (): JSX.Element => {
           <Text as="h4" type="heading3" color="grey1">
             Ferramentas que domino
           </Text>
-          {/* <StackCards>
+          <StackCards>
             {stackData.map((stack, index) => (
               <Stack key={index} title={stack.title} icon={stack.img} />
             ))}
-          </StackCards> */}
-      {/* </Container>
+          </StackCards>
+        </Container>
       </StackSection>
       <ProjectsArea id="projetos">
         <Container>
@@ -72,16 +72,16 @@ export const Home = (): JSX.Element => {
                 No linkedIn sempre estou compartilhando meus processos diários
                 para desenvolver esses projetos e estou disposto a trocar
                 algumas ideias por lá
-              </Text> */}
-      {/* <Button
+              </Text>
+              <Button
                 type="primary"
                 target="_blank"
                 as="a"
                 href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
               >
                 Acessar perfil no LinkedIn
-              </Button> */}
-      {/* </ProjectsAreaSocialMediaMessage>
+              </Button>
+            </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
               <Text type="body1" color="grey2" css={{ marginBottom: "$2" }}>
                 Projetos
@@ -97,7 +97,7 @@ export const Home = (): JSX.Element => {
             </ProjectsAreaContent>
           </ProjectAreaWrapperColumns>
         </Container>
-      </ProjectsArea> */}
+      </ProjectsArea>
     </main>
   );
 };
