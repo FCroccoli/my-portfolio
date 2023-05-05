@@ -8,8 +8,8 @@ import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
 
 // Data
-import { stackData } from "@/utils/stackData";
-import { userData } from "@/utils/userData";
+// import { stackData } from "@/utils/stackData";
+// import { userData } from "@/utils/userData";
 
 // Page Style
 import {
@@ -23,7 +23,6 @@ import {
   ProjectsAreaContent,
   ProjectAreaWrapperColumns,
 } from "./style";
-
 
 export const Home = (): JSX.Element => {
   return (
@@ -55,11 +54,11 @@ export const Home = (): JSX.Element => {
           <Text as="h4" type="heading3" color="grey1">
             Ferramentas que domino
           </Text>
-          <StackCards>
+          {/* <StackCards>
             {stackData.map((stack, index) => (
               <Stack key={index} title={stack.title} icon={stack.img} />
             ))}
-          </StackCards>
+          </StackCards> */}
         </Container>
       </StackSection>
       <ProjectsArea id="projetos">
@@ -74,14 +73,14 @@ export const Home = (): JSX.Element => {
                 para desenvolver esses projetos e estou disposto a trocar
                 algumas ideias por lá
               </Text>
-              <Button
+              {/* <Button
                 type="primary"
                 target="_blank"
                 as="a"
                 href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
               >
                 Acessar perfil no LinkedIn
-              </Button>
+              </Button> */}
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
               <Text type="body1" color="grey2" css={{ marginBottom: "$2" }}>
